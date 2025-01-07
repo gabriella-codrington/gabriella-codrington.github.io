@@ -12,10 +12,10 @@
     src: url('https://fonts.cdnfonts.com/css/monument-extended');
 }
 body{
-    font-family: 'Roobert', fallback_font;
+    font-family: 'Monument Extended', sans-serif;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: linear-gradient(-45deg, #e66b13, #e73c7e, #b123d5, #f5f5f5);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 	height: 100vh;
@@ -31,22 +31,37 @@ body{
 		background-position: 0% 50%;
 	}
 }
+
+/* menu */
+
+li {
+    display: inline;
+    float: right;
+    padding: 15px;
+    font-family: 'Monument Extended', sans-serif;
+    color: black;
+    font-size: 25px;
+}
+a:link {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+/* heading */
+
 #intro {
     color: black;
     font-family: 'Monument Extended', sans-serif;
-    flex-direction: column;
-    align-items:center;
-    background-size:contain;
-    padding: 100px 20px 0px 20px;
-    height: 898px;
-    
+    padding: 200px 20px 0px 100px;
 }
 .greeting{
     font-size: 150px;
     font-weight: lighter;
-    -webkit-text-fill-color: rgb(214, 97, 255);
+    -webkit-text-fill-color: transparent;
     -webkit-text-stroke-color: black;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 2px;
 }
 .name{
     font-size: 110px;
@@ -61,237 +76,5 @@ body{
     font-size: 30px;
     font-weight: lighter;
 }
-#about{
-    background-color: white;
-    color: black;
-    text-align: center;
-    flex-direction: column;
-    padding: 30px 120px 30px 120px;
-    height: 800px;
-}
-.aboutHeading{
-    font-size: 30px;
-}
-.aboutParagraph{
-    padding: 30px 0px 0px 0px;
-    font-size: 24px;
-}
-
-.experienceHeading{
-    font-size: 30px;
-    padding: 30px;
-}
-#experience{
-    background-color:rgb(214, 97, 255);
-    color: black;
-    text-align: center;
-    flex-direction: column;
-    height: 100%;
-}
-#experience-flex-container {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    justify-content: center;
-    padding: 40px;
-    gap: 20px;
-}
-.ex-text{
-    padding-left: 100px;
-}
-@media (max-width: 800px) {
-    #experience-flex-container {
-      flex-direction: column;
-    }
-}
-.menu{
-    flex: 1;
-    border: 2px solid black;
-    border-radius: 25px;
-    padding: 30px;
-    background-color: white;
-    height: max-content;
-}
-ul {
-    text-align: left;
-    list-style-position: inside;
-}
-svg{
-    float: right;
-    overflow: visible;
-}
-#date{
-    fill:rgb(1, 255, 246);
-}
-.logo{
-    float:left;
-}
-
-.educationHeading{
-    font-size: 30px;
-    padding: 30px;
-}
-#education{
-    text-align: center;
-    height: 800px;
-    padding: 20px 0;
-    background-color: rgb(255, 203, 70);
-}
-#education-flex-container {
-    display: flex;
-    flex-direction: row;
-    text-align:left;
-    padding: 28px;
-    gap: 20px;
-    justify-content: space-between;
-    width: 100%;
-    flex: 1;
-    flex-grow: 1;
-}
-@media (max-width: 800px) {
-    #education-flex-container {
-      flex-direction: column;
-    }
-}
-h3{
-    font-size: 24px;
-}
-.menu1{
-    flex: 1;
-    border: 2px solid black;
-    border-radius: 25px;
-    padding: 15px;
-    background:rgb(255, 129, 204);
-}
-
-.publicationHeading{
-    font-size: 30px;
-    padding: 30px;
-}
-#publications{
-    text-align: center;
-    height: 800px;
-    background-color: white;;
-}
-
-.projectHeading{
-    font-size: 30px;
-    padding: 30px;
-    color: white;
-}
-#projects{
-    text-align: center;
-    height: 100%;
-    background-color: black;
-    color: rgb(255, 203, 70);
-
-}
-#project-flex-container{
-    display: flex;
-    flex-direction: row;
-    text-align:left;
-    justify-content: space-between;
-    width: 100%;
-    flex: 1;
-    flex-grow: 1;
-}
-@media (max-width: 800px){
-    #project-flex-container {
-        flex-direction: column;
-    }
-}
-.menu2{
-    flex: 1;
-    text-align: left;
-    padding: 30px;
-}
-.project-summary{
-    padding: 10px;
-    padding-bottom: 20px;
-}
-.project-link{
-    background-color:rgb(255, 203, 70);
-    color:black;
-    border: 2px;
-    border-radius: 25px;
-    text-decoration: none;
-    padding: 10px;
-}
-
-.socialHeading{
-    font-size: 30px;
-    padding: 30px;
-}
-#socials{
-    text-align: center;
-    height: 800px;
-    background-color: white;
-}
-.connect{
-    background-color: rgb(1, 255, 246);
-}
-footer{
-    background-color: black;
-    color: white;
-}
-.footer{
-    padding: 10px;
-}
-.jump{
-    color: white;
-}
-.jump:active{
-    color: white;
-}
-.jump:visited{
-    color: white;
-}
-.jump:hover{
-    color: white;
-}
 
 
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-  
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  #main {
-    transition: margin-left .5s;
-    padding: 16px;
-  }
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
