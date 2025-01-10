@@ -12,10 +12,26 @@
     src: url('https://fonts.cdnfonts.com/css/monument-extended');
 }
 body{
+    cursor: none;
     font-family: 'Monument Extended', sans-serif;
-    display: flex;
     flex-direction: column;
+    display: flex;
     background-color: black;
+}
+#cursor {
+    background-color: black;
+    border-radius: 25px;
+    
+    height: 50px;
+    width: 50px;
+    
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    filter: invert(1);
+    mix-blend-mode: difference;
 }
 
 /* main screen-home */
@@ -37,16 +53,31 @@ body{
 		background-position: 0% 50%;
 	}
 }
+#logo {
+    position: fixed;
+    padding: 15px;
+    font-family: 'Monument Extended', sans-serif;
+    text-decoration: none;
+    mix-blend-mode: difference;
+    font-size: 25px;
+}
 
 /* menu-home */
-
-.li-home {
-    display: inline;
-    float: right;
+#navigation-home {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: 10px;
+}
+#navigation-home a {
+  float: right;
+  display: block;
+}
+.a-home{
     padding: 15px;
     font-family: 'Monument Extended', sans-serif;
     color: black;
-    font-size: 25px;
+    font-size: 25px; 
 }
 .a-home:link {
     color: black;
@@ -87,15 +118,124 @@ body{
     font-weight: lighter;
 }
 
+/* projects-home */
+#project-screen{
+    color: white;
+    font-family: helvetica;
+    text-transform: uppercase;
+    overflow-x: hidden;
+}
+#project-scroll{
+    display:flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    min-width: 100%;
+  }
+.project-news-message-bac{
+    display : flex;
+    flex-shrink: 0;
+    height: 50px;
+    align-items: center;
+    animation: slide-left 20s linear infinite;
+}
+.project-news-message-for{
+    display : flex;
+    flex-shrink: 0;
+    height: 50px;
+    align-items: center;
+    animation: slide-right 20s linear infinite;
+}
+.project-text{
+    font-size: 3em;
+    font-weight: 100;
+    padding-left: 0.5em;
+}
+@keyframes slide-left {
+    from {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    to {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+}
+@keyframes slide-right {
+    from {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+    to {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+}
+#projects-screen {
+    background: black;
+	background-size: 400% 400%;
+	height: 100vh;
+}
+#menu-circles {
+    display: flex;
+    margin: 150px auto;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+.dot {
+    width: 388px;
+    height: 388px;
+    font-size: 60px;
+    color: black;
+    text-decoration: none;
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 50px auto 50px;
+    border-radius: 50%;
+    animation: spin 10s infinite linear;
+}
+@keyframes spin {
+    to {
+      transform: rotate(1turn);
+    }
+}
+.dot:hover {
+    animation: none;
+}
+
+/* 404 page */
+.error-404 {
+    color: black;
+    font-size: 90px;
+    font-family: 'Monument Extended', sans-serif;
+    text-align: center;
+    padding-top: 300px;
+}
+.error-404-description {
+    color: black;
+    font-size: 40px;
+    font-family: 'Monument Extended', sans-serif;
+    text-align: center;
+}
+
 /* about */
 #navigation-about {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: 10px;
+}
+#navigation-about a{
+    float: right;
+    display: block;
     background: linear-gradient(-45deg, #e66b13, #e73c7e, #b123d5, #f5f5f5);
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    padding-top: 10px;
 }
-.li-about {
-    display: inline;
-    float: right;
+.a-about {
     padding: 15px;
     font-family: 'Monument Extended', sans-serif;
     font-size: 25px;
@@ -109,7 +249,7 @@ body{
 }
 
 #about {
-    padding: 200px 900px 0px 300px;
+    padding: 200px 850px 0px 300px;
 }
 .greeting-about {
     font-size: 70px;
@@ -121,4 +261,3 @@ body{
     font-size: 30px;
     color: white;
 }
-
