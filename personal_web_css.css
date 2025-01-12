@@ -58,7 +58,7 @@ body{
     padding: 15px;
     font-family: 'Monument Extended', sans-serif;
     text-decoration: none;
-    mix-blend-mode: difference;
+    color: black;
     font-size: 25px;
 }
 
@@ -85,6 +85,7 @@ body{
 }
 .a-home:hover {
     text-decoration: underline;
+    font-style: italic;
 }
 .a-home:visited {
     color: black;
@@ -203,6 +204,27 @@ body{
 }
 .dot:hover {
     animation: none;
+}
+
+/* footer */
+#footer{
+    padding-left: 50px;
+}
+.footer {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 0px 0px 0px 50px;
+}
+.footer:hover {
+    text-decoration: underline;
+}
+
+/* copyright */
+.copyright {
+    color: white;
+    font-size: 20px;
+    padding: 100px 0px 0px 50px;
 }
 
 /* 404 page */
