@@ -1,0 +1,17 @@
+#footer{
+    padding-left: 50px;
+}
+.footer {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 0px 0px 0px 50px;
+}
+.footer:hover {
+    text-decoration: underline;
+}
+.copyright {
+    color: white;
+    font-size: 20px;
+    padding: 100px 0px 0px 50px;
+}
